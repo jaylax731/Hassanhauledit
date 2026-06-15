@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+// Footer
 const services = [
   "Furniture Removal",
   "Appliance Removal",

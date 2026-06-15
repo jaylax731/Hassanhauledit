@@ -5,8 +5,8 @@ import { useEffect, useRef, useState } from "react";
 const stats = [
   { value: 500, suffix: "+", label: "Loads Removed" },
   { value: 100, suffix: "+", label: "Trailer Rentals" },
-  { value: null, display: "Same-Day", label: "Availability" },
-  { value: null, display: "5-Star", label: "Service" },
+  { value: null, display: "24hr", label: "Response Time" },
+  { value: null, display: "5★", label: "Rating" },
 ];
 
 function Counter({ value, suffix }: { value: number; suffix: string }) {
@@ -57,7 +57,7 @@ export default function AnimatedStats() {
           {value !== null && suffix ? (
             <Counter value={value} suffix={suffix} />
           ) : (
-            <div className="text-3xl md:text-4xl font-black text-orange-500 whitespace-nowrap">{display}</div>
+            <div className="text-3xl md:text-4xl font-black text-orange-500">{display}</div>
           )}
           <div className="text-stone-500 text-xs uppercase tracking-widest mt-1">{label}</div>
         </div>

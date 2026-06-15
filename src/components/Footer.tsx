@@ -32,16 +32,16 @@ export default function Footer() {
             </p>
             <div className="flex flex-col gap-2 text-sm text-stone-400">
               <a
-                href="tel:+15551234567"
+                href="tel:+15164766455"
                 className="hover:text-orange-500 transition-colors duration-200 flex items-center gap-2"
               >
-                <span>📞</span> (555) 123-4567
+                <span>📞</span> 516-476-6455
               </a>
               <a
-                href="mailto:info@hassanhauleditsrc.com"
+                href="mailto:hassansoldit@gmail.com"
                 className="hover:text-orange-500 transition-colors duration-200 flex items-center gap-2"
               >
-                <span>✉️</span> info@hassanhauleditsrc.com
+                <span>✉️</span> hassansoldit@gmail.com
               </a>
               <span className="flex items-center gap-2">
                 <span>📍</span> Serving Your Local Area

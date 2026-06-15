@@ -42,7 +42,7 @@ export default function ContactPage() {
                 </h3>
                 <div className="space-y-4">
                   <a
-                    href="tel:+15551234567"
+                    href="tel:+15164766455"
                     className="flex items-center gap-3 text-stone-300 hover:text-orange-500 transition-colors duration-200 group"
                   >
                     <div className="w-10 h-10 bg-stone-800 group-hover:bg-orange-500/10 rounded-sm flex items-center justify-center flex-shrink-0 transition-colors duration-200">
@@ -50,12 +50,12 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="text-xs text-stone-500 mb-0.5">Phone / Text</div>
-                      <div className="font-semibold text-sm">(555) 123-4567</div>
+                      <div className="font-semibold text-sm">516-476-6455</div>
                     </div>
                   </a>
 
                   <a
-                    href="mailto:info@hassanhauleditsrc.com"
+                    href="mailto:hassansoldit@gmail.com"
                     className="flex items-center gap-3 text-stone-300 hover:text-orange-500 transition-colors duration-200 group"
                   >
                     <div className="w-10 h-10 bg-stone-800 group-hover:bg-orange-500/10 rounded-sm flex items-center justify-center flex-shrink-0 transition-colors duration-200">
@@ -63,7 +63,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="text-xs text-stone-500 mb-0.5">Email</div>
-                      <div className="font-semibold text-sm">info@hassanhauleditsrc.com</div>
+                      <div className="font-semibold text-sm">hassansoldit@gmail.com</div>
                     </div>
                   </a>
 

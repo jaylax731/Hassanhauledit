@@ -69,7 +69,7 @@ export default function ContactForm({ defaultSize }: { defaultSize?: string }) {
     if (errors[field]) setErrors((e) => ({ ...e, [field]: undefined }));
   }
 
-  async function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const errs = validate(form);
     if (Object.keys(errs).length > 0) {
@@ -80,9 +80,39 @@ export default function ContactForm({ defaultSize }: { defaultSize?: string }) {
     }
 
     setStatus("submitting");
-    // Simulate async submission (replace with real API call / form endpoint)
-    await new Promise((r) => setTimeout(r, 1200));
-    setStatus("success");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...form, photoName }),
+      });
+      if (!res.ok) throw new Error("Send failed");
+      setStatus("success");
+    } catch {
+      setStatus("error");
+    }
+  }
+
+  if (status === "error") {
+    return (
+      <div className="bg-stone-900 border border-red-500/30 rounded-sm p-12 text-center">
+        <div className="text-5xl mb-4">⚠️</div>
+        <h3 className="text-2xl font-bold text-stone-50 mb-3">Something Went Wrong</h3>
+        <p className="text-stone-400 leading-relaxed max-w-md mx-auto mb-8">
+          Your message couldn&apos;t be sent. Please call or text us directly and we&apos;ll get you sorted right away.
+        </p>
+        <div className="inline-flex flex-col gap-2 text-sm text-stone-500">
+          <a href="tel:+15164766455" className="text-orange-500 hover:text-orange-400">📞 516-476-6455</a>
+          <a href="mailto:hassansoldit@gmail.com" className="text-orange-500 hover:text-orange-400">✉️ hassansoldit@gmail.com</a>
+        </div>
+        <button
+          onClick={() => setStatus("idle")}
+          className="mt-8 text-stone-500 hover:text-stone-300 text-sm underline transition-colors duration-200 block mx-auto"
+        >
+          Try again
+        </button>
+      </div>
+    );
   }
 
   if (status === "success") {
@@ -95,8 +125,8 @@ export default function ContactForm({ defaultSize }: { defaultSize?: string }) {
           usually within the hour during business hours.
         </p>
         <div className="inline-flex flex-col gap-2 text-sm text-stone-500">
-          <span>📞 Need to reach us faster? Call <a href="tel:+15551234567" className="text-orange-500 hover:text-orange-400">(555) 123-4567</a></span>
-          <span>✉️ Or email <a href="mailto:info@hassanhauleditsrc.com" className="text-orange-500 hover:text-orange-400">info@hassanhauleditsrc.com</a></span>
+          <span>📞 Need to reach us faster? Call <a href="tel:+15164766455" className="text-orange-500 hover:text-orange-400">516-476-6455</a></span>
+          <span>✉️ Or email <a href="mailto:hassansoldit@gmail.com" className="text-orange-500 hover:text-orange-400">hassansoldit@gmail.com</a></span>
         </div>
         <button
           onClick={() => { setForm(empty); setStatus("idle"); setPhotoName(null); }}

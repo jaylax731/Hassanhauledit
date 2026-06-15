@@ -72,8 +72,8 @@ export default function HomePage() {
         {/* Background photo */}
         <div className="absolute inset-0">
           <Image
-            src="/trailer5.jpg"
-            alt="HassanHauledit junk removal trailer loaded with furniture"
+            src="/truck6.png"
+            alt="HassanHauledit junk removal truck"
             fill
             sizes="100vw"
             className="object-cover object-center"

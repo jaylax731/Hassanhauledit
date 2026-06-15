@@ -79,8 +79,8 @@ export default function HomePage() {
             className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-stone-900/80" />
-          <div className="absolute inset-0 bg-gradient-to-r from-stone-900 via-stone-900/90 to-stone-900/40" />
+          <div className="absolute inset-0 bg-stone-900/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-stone-900 via-stone-900/80 to-stone-900/20" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 w-full">
@@ -179,7 +179,7 @@ export default function HomePage() {
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div>
                   <div className="text-xs font-bold uppercase tracking-widest text-stone-500 mb-3">We Handle</div>
-                  {["Lifting", "Loading", "Cleanup", "Disposal"].map((i) => (
+                  {["Lifting", "Loading", "Hauling", "Disposal"].map((i) => (
                     <div key={i} className="flex items-center gap-2 text-stone-300 text-sm py-1">
                       <span className="text-orange-500 text-xs">✓</span> {i}
                     </div>
@@ -395,7 +395,7 @@ export default function HomePage() {
 
               <div className="bg-stone-950 border border-orange-500/20 rounded-sm p-5">
                 <p className="text-stone-300 text-sm leading-relaxed">
-                  <span className="text-orange-500 font-bold">Send us a photo</span> and we&apos;ll give you an accurate quote before we show up — no surprises on the day of your haul.
+                  Send us a <span className="text-orange-500 font-bold">photo</span> and we&apos;ll give you an accurate quote before we show up — no surprises on the day of your haul.
                 </p>
               </div>
 

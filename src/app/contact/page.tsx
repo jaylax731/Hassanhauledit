@@ -151,7 +151,7 @@ export default function ContactPage() {
               { icon: "⚡", label: "Fast Response", sub: "Usually within 1 hour" },
               { icon: "💰", label: "Free Quotes", sub: "No obligation, ever" },
               { icon: "🛡️", label: "Fully Covered", sub: "Your property protected" },
-              { icon: "✨", label: "Clean Service", sub: "No mess left behind" },
+              { icon: "✨", label: "Fast Hauling", sub: "We load and take it away" },
             ].map(({ icon, label, sub }) => (
               <div key={label} className="flex flex-col items-center gap-2">
                 <span className="text-2xl">{icon}</span>

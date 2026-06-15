@@ -109,7 +109,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2 text-xs text-stone-500">
                 <span className="w-1.5 h-1.5 rounded-full bg-orange-500 inline-block" />
-                Licensed & Insured
+                Locally Owned & Operated
               </div>
               <div className="flex items-center gap-2 text-xs text-stone-500">
                 <span className="w-1.5 h-1.5 rounded-full bg-orange-500 inline-block" />

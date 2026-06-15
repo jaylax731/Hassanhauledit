@@ -57,7 +57,7 @@ export default function AnimatedStats() {
           {value !== null && suffix ? (
             <Counter value={value} suffix={suffix} />
           ) : (
-            <div className="text-3xl md:text-4xl font-black text-orange-500">{display}</div>
+            <div className="text-3xl md:text-4xl font-black text-orange-500 whitespace-nowrap">{display}</div>
           )}
           <div className="text-stone-500 text-xs uppercase tracking-widest mt-1">{label}</div>
         </div>

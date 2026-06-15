@@ -55,7 +55,7 @@ export default function ContactPage() {
                   </a>
 
                   <a
-                    href="mailto:hassansoldit@gmail.com"
+                    href="mailto:hassan@hassansoldit.com"
                     className="flex items-center gap-3 text-stone-300 hover:text-orange-500 transition-colors duration-200 group"
                   >
                     <div className="w-10 h-10 bg-stone-800 group-hover:bg-orange-500/10 rounded-sm flex items-center justify-center flex-shrink-0 transition-colors duration-200">
@@ -63,7 +63,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="text-xs text-stone-500 mb-0.5">Email</div>
-                      <div className="font-semibold text-sm">hassansoldit@gmail.com</div>
+                      <div className="font-semibold text-sm">hassan@hassansoldit.com</div>
                     </div>
                   </a>
 

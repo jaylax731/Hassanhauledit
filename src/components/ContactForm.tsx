@@ -69,7 +69,7 @@ export default function ContactForm({ defaultSize }: { defaultSize?: string }) {
     if (errors[field]) setErrors((e) => ({ ...e, [field]: undefined }));
   }
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.SyntheticEvent<HTMLFormElement>) {
     e.preventDefault();
     const errs = validate(form);
     if (Object.keys(errs).length > 0) {
@@ -103,7 +103,7 @@ export default function ContactForm({ defaultSize }: { defaultSize?: string }) {
         </p>
         <div className="inline-flex flex-col gap-2 text-sm text-stone-500">
           <a href="tel:+15164766455" className="text-orange-500 hover:text-orange-400">📞 516-476-6455</a>
-          <a href="mailto:hassansoldit@gmail.com" className="text-orange-500 hover:text-orange-400">✉️ hassansoldit@gmail.com</a>
+          <a href="mailto:hassan@hassansoldit.com" className="text-orange-500 hover:text-orange-400">✉️ hassan@hassansoldit.com</a>
         </div>
         <button
           onClick={() => setStatus("idle")}
@@ -126,7 +126,7 @@ export default function ContactForm({ defaultSize }: { defaultSize?: string }) {
         </p>
         <div className="inline-flex flex-col gap-2 text-sm text-stone-500">
           <span>📞 Need to reach us faster? Call <a href="tel:+15164766455" className="text-orange-500 hover:text-orange-400">516-476-6455</a></span>
-          <span>✉️ Or email <a href="mailto:hassansoldit@gmail.com" className="text-orange-500 hover:text-orange-400">hassansoldit@gmail.com</a></span>
+          <span>✉️ Or email <a href="mailto:hassan@hassansoldit.com" className="text-orange-500 hover:text-orange-400">hassan@hassansoldit.com</a></span>
         </div>
         <button
           onClick={() => { setForm(empty); setStatus("idle"); setPhotoName(null); }}

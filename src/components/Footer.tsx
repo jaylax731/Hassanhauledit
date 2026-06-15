@@ -38,10 +38,10 @@ export default function Footer() {
                 <span>📞</span> 516-476-6455
               </a>
               <a
-                href="mailto:hassansoldit@gmail.com"
+                href="mailto:hassan@hassansoldit.com"
                 className="hover:text-orange-500 transition-colors duration-200 flex items-center gap-2"
               >
-                <span>✉️</span> hassansoldit@gmail.com
+                <span>✉️</span> hassan@hassansoldit.com
               </a>
               <span className="flex items-center gap-2">
                 <span>📍</span> Serving Your Local Area

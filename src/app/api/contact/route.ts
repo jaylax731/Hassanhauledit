@@ -53,7 +53,7 @@ export async function POST(req: NextRequest) {
 
     await transporter.sendMail({
       from: `"HassanHauledit Website" <${process.env.GMAIL_USER}>`,
-      to: "hassansoldit@gmail.com",
+      to: "hassan@hassansoldit.com",
       replyTo: email,
       subject: `New Quote Request — ${loadSize} — ${name}`,
       html,

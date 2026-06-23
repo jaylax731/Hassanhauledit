@@ -44,6 +44,12 @@ export default function Footer() {
               >
                 <span>✉️</span> hassan@hassansoldit.com
               </a>
+              <a
+                href="mailto:trailertrucksjunk@gmail.com"
+                className="hover:text-orange-500 transition-colors duration-200 flex items-center gap-2"
+              >
+                <span>✉️</span> trailertrucksjunk@gmail.com
+              </a>
               <span className="flex items-center gap-2">
                 <span>📍</span> Serving Your Local Area
               </span>
